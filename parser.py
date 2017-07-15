@@ -24,7 +24,7 @@ def main(base,skip):
                         href = soup.find_all('a',{'class':'b-right-column__block__friends__item booster-sc'}) #Выдергиваем список друзей
                         
                         for h in href:
-                                h=h.attrs["href"] #Получаем ссылку на профил
+                                h=h.attrs["href"] #Получаем ссылку на профиль
                                 base.append(h)
                                 
                         if h in skip: #Защита от зацикливания
